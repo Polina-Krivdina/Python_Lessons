@@ -9,7 +9,7 @@ driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install())
 
 driver.get("http://the-internet.herokuapp.com/entry_ad")
 
-driver.find_element(By.CSS_SELECTOR, "#modal .modal-footer").click()
+driver.find_element(By.PARTIAL_LINK_TEXT, '$0').click()
 
 #я поняла так, что нужно чтобы локатор был интерактивным, но в коде нет тега обозначающего кнопку. То есть я могу нажать в ручную,
 #но при автоматизации пишет что элемент not interactable

@@ -14,6 +14,6 @@ for x in range(1, 6):
 
 print(len(driver.find_elements(By.CLASS_NAME, "button.added-manually")))
 
-#почему-то не получается вывести список; мне кажется это из-за тега: button
+#скрипт отработал, но теперь выводит число 0, хотя должен выводить 5
 
 sleep(5)
