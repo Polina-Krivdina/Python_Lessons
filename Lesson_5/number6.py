@@ -5,6 +5,11 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 
+from selenium.webdriver.firefox.service import Service as FirefoxService
+from webdriver_manager.firefox import FirefoxDriverManager
+
+driver1 = webdriver.Firefox(service=FirefoxService(FirefoxDriverManager().install))
+
 driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
 
 driver.get("http://the-internet.herokuapp.com/entry_ad")
